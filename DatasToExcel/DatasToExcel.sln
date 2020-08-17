@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatasToExcel", "DatasToExcel\DatasToExcel.csproj", "{F4083A0F-CF08-44C1-942F-922FC0143830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatasToExcel.Test", "DatasToExcel.Test\DatasToExcel.Test.csproj", "{C4542D44-B6B3-4A2E-8C69-6CB7DC6F2F3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4083A0F-CF08-44C1-942F-922FC0143830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4083A0F-CF08-44C1-942F-922FC0143830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4083A0F-CF08-44C1-942F-922FC0143830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4083A0F-CF08-44C1-942F-922FC0143830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4542D44-B6B3-4A2E-8C69-6CB7DC6F2F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4542D44-B6B3-4A2E-8C69-6CB7DC6F2F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4542D44-B6B3-4A2E-8C69-6CB7DC6F2F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4542D44-B6B3-4A2E-8C69-6CB7DC6F2F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F24B8C6B-FEE5-466F-BC65-FCEF9F9E2EE8}
+	EndGlobalSection
+EndGlobal
