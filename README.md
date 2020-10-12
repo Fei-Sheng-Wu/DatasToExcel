@@ -1,8 +1,8 @@
 # DatasToExcel
 
-[![Target Framework](https://img.shields.io/badge/%2ENet%20Core-3.0-green.svg)](https://docs.microsoft.com/en-us/dotnet/core/about)
-[![Nuget](https://img.shields.io/badge/Nuget-v1.0.0-blue.svg)](https://www.nuget.org/packages/DatasToExcel/1.0.0)
-[![Lincense](https://img.shields.io/badge/Lincense-MIT-orange.svg)](https://github.com/Fei-Sheng-Wu/DatasToExcel/blob/1.0.0/LICENSE.txt)
+[![Target Framework](https://img.shields.io/badge/%2ENet%20Core-3.0-green.svg?style=flat-square)](https://docs.microsoft.com/en-us/dotnet/core/about)
+[![Nuget](https://img.shields.io/badge/Nuget-v1.0.0-blue.svg?style=flat-square)](https://www.nuget.org/packages/DatasToExcel/1.0.0)
+[![Lincense](https://img.shields.io/badge/Lincense-MIT-orange.svg?style=flat-square)](https://github.com/Fei-Sheng-Wu/DatasToExcel/blob/1.0.0/LICENSE.txt)
 
 > A 2D array to Excel file converter, support header first row and fixed headers. It uses .Net Core 3.0 as framework and only depends on the Open Xml SDK.
 
