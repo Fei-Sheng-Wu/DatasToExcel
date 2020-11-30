@@ -1,10 +1,10 @@
 # DatasToExcel
 
 [![Target Framework](https://img.shields.io/badge/%2ENet%20Core-3.0-green.svg?style=flat-square)](https://docs.microsoft.com/en-us/dotnet/core/about)
-[![Nuget](https://img.shields.io/badge/Nuget-v1.0.0-blue.svg?style=flat-square)](https://www.nuget.org/packages/DatasToExcel/1.0.0)
-[![Lincense](https://img.shields.io/badge/Lincense-MIT-orange.svg?style=flat-square)](https://github.com/Fei-Sheng-Wu/DatasToExcel/blob/1.0.0/LICENSE.txt)
+[![Nuget](https://img.shields.io/badge/Nuget-v1.0.1-blue.svg?style=flat-square)](https://www.nuget.org/packages/DatasToExcel/1.0.1)
+[![Lincense](https://img.shields.io/badge/Lincense-MIT-orange.svg?style=flat-square)](https://github.com/Fei-Sheng-Wu/DatasToExcel/blob/1.0.1/LICENSE.txt)
 
-> A 2D array to Excel file converter, support header first row and fixed headers. It uses .Net Core 3.0 as framework and only depends on the Open Xml SDK.
+> A 2D array to Excel file converter. Support header first row and fixed headers. Support custom sheet name. It uses .Net Core 3.0 as framework and only depends on the Open Xml SDK.
 
 ## Dependencies
 
@@ -57,4 +57,4 @@ using (MemoryStream ms = new MemoryStream())
 
 ## License
 
-This project is under the [MIT License](https://github.com/Fei-Sheng-Wu/DatasToExcel/blob/1.0.0/LICENSE.txt).
+This project is under the [MIT License](https://github.com/Fei-Sheng-Wu/DatasToExcel/blob/1.0.1/LICENSE.txt).
