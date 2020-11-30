@@ -61,6 +61,19 @@ namespace DatasToExcel
         /// </summary>
         /// <typeparam name="T">The type of values in array.</typeparam>
         /// <param name="data">The 2D array, first dimension is row and second dimension is column.</param>
+        /// <param name="filename">The output path to save the Excel file.</param>
+        /// <param name="headerFirstRow">Is the first row in data is header or not.</param>
+        /// <param name="customSheetName">The name of the sheet in the Excel file.</param>
+        public static void GenerateExcel<T>(this T[,] data, string filename, bool headerFirstRow, string customSheetName)
+        {
+            GenerateExcel(data, new FileStream(filename, FileMode.Create, FileAccess.ReadWrite), headerFirstRow, customSheetName);
+        }
+
+        /// <summary>
+        /// Generate Excel file from 2D array.
+        /// </summary>
+        /// <typeparam name="T">The type of values in array.</typeparam>
+        /// <param name="data">The 2D array, first dimension is row and second dimension is column.</param>
         /// <param name="stream">The output stream to save the Excel file.</param>
         public static void GenerateExcel<T>(this T[,] data, Stream stream)
         {
@@ -75,6 +88,19 @@ namespace DatasToExcel
         /// <param name="stream">The output stream to save the Excel file.</param>
         /// <param name="headerFirstRow">Is the first row in data is header or not.</param>
         public static void GenerateExcel<T>(this T[,] data, Stream stream, bool headerFirstRow)
+        {
+            GenerateExcel(data, stream, false, "Sheet 1");
+        }
+
+        /// <summary>
+        /// Generate Excel file from 2D array.
+        /// </summary>
+        /// <typeparam name="T">The type of values in array.</typeparam>
+        /// <param name="data">The 2D array, first dimension is row and second dimension is column.</param>
+        /// <param name="stream">The output stream to save the Excel file.</param>
+        /// <param name="headerFirstRow">Is the first row in data is header or not.</param>
+        /// <param name="customSheetName">The name of the sheet in the Excel file.</param>
+        public static void GenerateExcel<T>(this T[,] data, Stream stream, bool headerFirstRow, string customSheetName)
         {
             try
             {
@@ -124,7 +150,7 @@ namespace DatasToExcel
 
                     string relationshipId = workbook.GetIdOfPart(worksheetPart);
                     uint sheetId = 1;
-                    string sheetName = "Sheet " + sheetId;
+                    string sheetName = customSheetName;
 
                     Sheet sheet = new Sheet()
                     {

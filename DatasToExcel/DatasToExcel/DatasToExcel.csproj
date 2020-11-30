@@ -2,10 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Authors>FeiShengWu</Authors>
+    <Company>Atoyot Software Inc.</Company>
+    <Copyright>Copyright © 2020 Atoyot Software Inc.</Copyright>
+    <PackageLicenseFile>MIT License.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/Fei-Sheng-Wu/DatasToExcel/</PackageProjectUrl>
+    <Description>A 2D array to Excel file converter. Support header first row and fixed headers. Support custom sheet name. It uses .Net Core 3.0 as framework and only depends on the Open Xml SDK.</Description>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.11.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="MIT License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
