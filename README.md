@@ -4,7 +4,7 @@
 [![Nuget](https://img.shields.io/badge/Nuget-v1.0.1-blue.svg?style=flat-square)](https://www.nuget.org/packages/DatasToExcel/1.0.1)
 [![Lincense](https://img.shields.io/badge/Lincense-MIT-orange.svg?style=flat-square)](https://github.com/Fei-Sheng-Wu/DatasToExcel/blob/1.0.1/LICENSE.txt)
 
-> A 2D array to Excel file converter. Support header first row and fixed headers. Support custom sheet name. It uses .Net Core 3.0 as framework and only depends on the Open Xml SDK.
+> A 2D array to Excel file converter. Generate Microsoft Excel file from a 2D array in C#. Support making the first row headers and custom worksheet name. .Net Core 3.0 framework and depends on the Open Xml SDK.
 
 ## Dependencies
 
@@ -14,8 +14,7 @@
 ## Main Features
 
 - [x] 2D array to Excel
-- [x] Header first row (optional)
-- [x] Fixed first row (optional)
+- [x] Making the first row headers
 
 ## How to Use
 
@@ -33,25 +32,25 @@ string[,] datas = new string[,]
 };
 ```
 
-And convert it to Excel and save to a fixed path.
+Convert it to a Excel file and save to a local file.
 
 ```c#
-datas.GenerateExcel(filename); //Do not header first row
-datas.GenerateExcel(filename, true); //Header first row
+datas.GenerateExcel(filename); //First row as non-headers
+datas.GenerateExcel(filename, true); //First row as headers
 ```
 
-Or save it to a memory stream.
+Or save it to a MemoryStream.
 
 ```c#
 //Option 1
-MemoryStream ms = datas.GenerateExcel(); //Do not header first row
-MemoryStream ms = datas.GenerateExcel(true); //Header first row
+MemoryStream ms = datas.GenerateExcel(); //First row as non-headers
+MemoryStream ms = datas.GenerateExcel(true); //First row as headers
 
 //Option 2
 using (MemoryStream ms = new MemoryStream())
 {
-    datas.GenerateExcel(ms); //Do not header first row
-    datas.GenerateExcel(ms, true); //Header first row
+    datas.GenerateExcel(ms); //First row as non-headers
+    datas.GenerateExcel(ms, true); //First row as headers
 }
 ```
 
